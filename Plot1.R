@@ -2,7 +2,7 @@
 # set the default arguments for this histogram
 png(file = "Plot1.png", 
     bg = "white",
-    width = 480, height = 480, units = "px", pointsize = 12)
+    width = 480, height = 480, units = "px", pointsize = 10)
 
 hist(plotdata$Global_active_power,
      main = "Global Active Power",
@@ -12,10 +12,10 @@ hist(plotdata$Global_active_power,
      breaks = 30,
      xaxt = "n",
      yaxt = "n", bg = "white") # not show the axis scale, set them later
-#prob = TRUE
-#when want the density plot
+#prob = TRUE #need this when want to draw the density plot
 axis = axis(1, at = seq(0,7,1))#set x axis scale
 axis = axis(2, at = seq(0,1300,200)) #set y axis scale
 rug(plotdata$Global_active_power)
-dev.copy(png,"Plot1.png")
+#to see the spread density of Global_active_power
+
 dev.off()
