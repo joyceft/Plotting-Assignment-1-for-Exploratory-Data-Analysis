@@ -8,6 +8,6 @@ plot(plotdata$DT, plotdata$Global_active_power,
      xlab = "Time Period",ylab = "Global Active Power(kilowatts)", 
      main = "Global Active Power vs Time Period", 
      type = "l", #1(L not 1) = line
-     col = "blue") # stronger contrast
-dev.copy(png,"Plot2.png")
+     col = "blue") # set blue not black as stronger contrast
+
 dev.off()
