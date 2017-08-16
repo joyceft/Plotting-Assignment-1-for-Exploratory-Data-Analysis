@@ -1,11 +1,11 @@
 #Plot3: 
-first try ggplot to put 3 lines in one graph
-require(ggplot2)
-p1 <- ggplot(plotdata, aes(DT))
-  p1 + geom_line(aes(y= plotdata$Sub_metering_1), color = "black" )
-  p1 + geom_line(aes(y= plotdata$Sub_metering_2), color = "red" )
-  p1 + geom_line(aes(y= plotdata$Sub_metering_3), color = "blue" )
-  p1 <- p1 + ylab("Energy Sub Metering") + xlab("Time Period")
+#first try ggplot to put 3 lines in one graph
+#require(ggplot2)
+#p1 <- ggplot(plotdata, aes(DT))
+#  p1 + geom_line(aes(y= plotdata$Sub_metering_1), color = "black" )
+#  p1 + geom_line(aes(y= plotdata$Sub_metering_2), color = "red" )
+#  p1 + geom_line(aes(y= plotdata$Sub_metering_3), color = "blue" )
+#  p1 <- p1 + ylab("Energy Sub Metering") + xlab("Time Period")
   #legend add failed...don't know how to handle it...
   
   
